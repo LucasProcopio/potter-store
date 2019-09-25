@@ -5,12 +5,12 @@ import { MdShoppingBasket } from 'react-icons/md';
 
 import { Cart, Container } from './styles';
 
-import logo from '../../assets/images/logo.svg';
+import logo from '../../assets/images/logo.png';
 
 export default function Header() {
   return (
     <Container>
-      <Link to="/">
+      <Link to="/" class="home-link">
         <img src={logo} alt="PotterStore" />
       </Link>
 
