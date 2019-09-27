@@ -1,0 +1,66 @@
+{
+  "stock": [
+    {
+      "id": 1,
+      "amount": 3
+    },
+    {
+      "id": 2,
+      "amount": 5
+    },
+    {
+      "id": 3,
+      "amount": 2
+    },
+    {
+      "id": 4,
+      "amount": 1
+    },
+    {
+      "id": 5,
+      "amount": 5
+    },
+    {
+      "id": 6,
+      "amount": 10
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Awesome griffindor magic pillow",
+      "price": 29.9,
+      "image": "https://static-store.worldticket.com.br/store/images/196/70196_fdioffwrgv.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Awesome Slytherin flag",
+      "price": 39.9,
+      "image": "https://static-store.worldticket.com.br/store/images/941/69941_d8js1ykcus.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Griffindor pingent",
+      "price": 19.9,
+      "image": "https://static-store.worldticket.com.br/store/images/917/67917_tpbgoyzaf1.png"
+    },
+    {
+      "id": 5,
+      "title": "Griffindor sweater",
+      "price": 139.9,
+      "image": "https://static-store.worldticket.com.br/store/images/675/69675_v5tnqylky5.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Ravenclaw pingent",
+      "price": 19.5,
+      "image": "https://static-store.worldticket.com.br/store/images/920/67920_u92prg1koq.png"
+    },
+    {
+      "id": 4,
+      "title": "Scorpius Malfoy powerful wand",
+      "price": 179.9,
+      "image": "https://i.ebayimg.com/images/g/0DwAAOSwgwxZbtyI/s-l300.jpg"
+    }
+  ]
+}
