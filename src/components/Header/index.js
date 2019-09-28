@@ -10,7 +10,7 @@ import logo from '../../assets/images/logo.png';
 export default function Header() {
   return (
     <Container>
-      <Link to="/" class="home-link">
+      <Link to="/" className="home-link">
         <img src={logo} alt="PotterStore" />
       </Link>
 
