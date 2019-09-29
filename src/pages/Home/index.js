@@ -3,6 +3,7 @@ import React from 'react';
 import { MdAddShoppingCart } from 'react-icons/md';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import PropTypes from 'prop-types';
 
 import { formatPrice } from '../../util/format';
 import api from '../../services/api';
@@ -35,6 +36,7 @@ class Home extends React.Component {
   render() {
     const { products } = this.state;
     const { amount } = this.props;
+    console.tron.log(amount);
     return (
       <ProductList>
         {products.map(prod => (
@@ -57,6 +59,11 @@ class Home extends React.Component {
     );
   }
 }
+
+Home.propTypes = {
+  addToCartRequest: PropTypes.func.isRequired,
+  amount: PropTypes.objectOf(PropTypes.number).isRequired,
+};
 
 const mapStateToProps = state => ({
   amount: state.cart.reduce((amount, prod) => {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import PropTypes from 'prop-types';
 
 import {
   MdRemoveCircleOutline,
@@ -10,6 +11,7 @@ import {
 import { Container, ProductTable, Total } from './styles';
 import * as CartActions from '../../store/modules/cart/actions';
 import { formatPrice } from '../../util/format';
+
 function Cart({ cart, removeFromCart, updateAmountRequest, total }) {
   function increment(product) {
     updateAmountRequest(product.id, product.amount + 1);
@@ -86,6 +88,23 @@ const mapStateToProps = state => ({
     }, 0)
   ),
 });
+
+Cart.propTypes = {
+  cart: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number,
+      title: PropTypes.string,
+      price: PropTypes.number,
+      image: PropTypes.string,
+      amount: PropTypes.number,
+      formattedPrice: PropTypes.string,
+      formattedSubtotal: PropTypes.string,
+    })
+  ).isRequired,
+  removeFromCart: PropTypes.func.isRequired,
+  updateAmountRequest: PropTypes.func.isRequired,
+  total: PropTypes.string.isRequired,
+};
 
 const mapDispatchToProps = dispatch =>
   bindActionCreators(CartActions, dispatch);
