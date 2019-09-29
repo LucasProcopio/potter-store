@@ -13,8 +13,8 @@
 
 ---
 
-<p style="align: center">
-  <img src="public/images/hpstore.gif" width="500">
+<p align="center">
+  <img src="public/images/hpstore.gif" alt="potter store">
 </p>
 
 ---
