@@ -23,7 +23,7 @@ module.exports = {
     'no-console': ['error', { allow: ['tron'] }],
     'no-param-reassign': [
       'error',
-      { props: true, ignorePropertyModificationsFor: ['amount'] },
+      { props: true, ignorePropertyModificationsFor: ['amount', 'sumAmount'] },
     ],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn'
